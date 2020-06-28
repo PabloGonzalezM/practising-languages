@@ -138,4 +138,23 @@ python/.pyre/
 python/.pytype/
 
 # Cython debug symbols
-cython_debug/
+python/cython_debug/
+
+#################################################################
+#                            Golang                             #
+#################################################################
+# Binaries for programs and plugins
+golang/*.exe
+golang/*.exe~
+golang/*.dll
+golang/*.so
+golang/*.dylib
+
+# Test binary, built with `go test -c`
+golang/*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+golang/*.out
+
+# Dependency directories (remove the comment below to include it)
+golang/vendor/
