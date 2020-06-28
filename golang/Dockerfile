@@ -12,6 +12,4 @@ RUN adduser -S -D -H -h . appuser
 
 USER appuser
 
-RUN ls
-
 CMD ["./main"]
