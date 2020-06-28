@@ -3,13 +3,33 @@ package main
 import "fmt"
 
 func main() {
-    menu()
+    option := menu()
+
+    for {
+        print("\nYou've choose the option " + option + ".\n")
+        if option == "0" {
+            break
+        } else {
+            option = menu()
+        }
+    }
+
 }
 
-func menu() {
-    fmt.Printf("User Menu:")
-    fmt.Printf("0 - Exit.")
-    fmt.Printf("1 - Hello.")
-    fmt.Printf("2 - Bye.")
-    fmt.Printf("3 - IDK.")
+func menu() string  {
+    fmt.Printf("\nUser Menu:\n")
+    fmt.Printf("0 - Exit.\n")
+    fmt.Printf("1 - Hello.\n")
+    fmt.Printf("2 - Bye.\n")
+    fmt.Printf("3 - IDK.\n")
+
+    var option string
+    fmt.Printf("\nChoose an option: \n")
+    _, err := fmt.Scan(&option)
+
+    if err != nil {
+        return "0"
+    }
+
+    return option
 }
