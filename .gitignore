@@ -278,3 +278,10 @@ node/.yarn/unplugged
 node/.yarn/build-state.yml
 node/.yarn/install-state.gz
 node/.pnp.*
+
+
+#################################################################
+#                              PHP                              #
+#################################################################
+php/composer.phar
+php/vendor/
